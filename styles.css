@@ -1,82 +1,68 @@
 /* styles.css */
 body {
-    background-image: url(https://images.playground.com/d9ca12d698b04830ad6b8cc9f36f2e4b.jpeg);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    height: 100vh;
     margin: 0;
     font-family: Arial, sans-serif;
+    background: url('https://images.playground.com/d9ca12d698b04830ad6b8cc9f36f2e4b.jpeg') no-repeat center center fixed;
+    background-size: cover;
 }
 
-.hidden {
-    display: none;
-}
-
-#landing-page, #introduction-page, #projects-page, #contact-page {
-    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent background */
-    padding: 20px;
-    border-radius: 10px;
-    margin: 20px;
+#landing-page {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     height: 100vh;
     text-align: center;
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent background */
+    padding: 20px;
+    border-radius: 10px;
 }
 
-nav {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    background: #333;
+h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+.button {
+    display: inline-block;
+    background-color: #007bff;
     color: white;
-    padding: 10px;
-    display: flex;
-    justify-content: center;
+    text-decoration: none;
+    padding: 15px 30px;
+    font-size: 18px;
+    border-radius: 10px;
+    transition: background-color 0.3s;
+}
+
+.button:hover {
+    background-color: #0056b3;
+}
+/* Additional styles for projects and contact pages */
+#projects-page {
+    padding: 20px;
+    text-align: center;
+}
+
+.project {
+    background-color: rgba(255, 255, 255, 0.8);
+    margin: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    display: inline-block;
+    text-align: left;
+}
+
+.project img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+#contact-page {
+    padding: 20px;
+    text-align: center;
 }
 
 nav a {
-    color: white;
-    text-decoration: none;
     margin: 0 15px;
-}
-
-nav a:hover {
-    text-decoration: underline;
-}
-
-button {
-    background-color: #007bff;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    font-size: 16px;
-    cursor: pointer;
-    border-radius: 5px;
-    margin-top: 20px;
-}
-
-button:hover {
-    background-color: #0056b3;
-}
-
-#begin-quest-button {
-    background-color: #4CAF50; /* Green background */
-    border: none; /* Remove border */
-    color: white; /* White text */
-    padding: 15px 32px; /* Padding */
-    text-align: center; /* Center text */
-    text-decoration: none; /* Remove underline */
-    display: inline-block; /* Inline-block display */
-    font-size: 16px; /* Font size */
-    margin: 4px 2px; /* Margin */
-    cursor: pointer; /* Pointer cursor on hover */
-    border-radius: 12px; /* Rounded corners */
-    transition: background-color 0.3s ease; /* Smooth transition */
-}
-
-#begin-quest-button:hover {
-    background-color: #45a049; /* Darker green on hover */
 }

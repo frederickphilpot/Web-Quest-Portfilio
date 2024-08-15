@@ -1,4 +1,3 @@
-// scripts.js
 document.addEventListener('DOMContentLoaded', () => {
     const pages = ['landing-page', 'introduction-page', 'projects-page', 'contact-page'];
 
