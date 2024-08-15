@@ -5,7 +5,6 @@ body {
     background: url('https://images.playground.com/d9ca12d698b04830ad6b8cc9f36f2e4b.jpeg') no-repeat center center fixed;
     background-size: cover;
 }
-
 #landing-page {
     display: flex;
     flex-direction: column;
@@ -37,32 +36,204 @@ h1 {
 .button:hover {
     background-color: #0056b3;
 }
-/* Additional styles for projects and contact pages */
-#projects-page {
-    padding: 20px;
+
+
+/* Custom styles for Introduction Page */
+.custom-background {
+    background: url('https://example.com/your-custom-background.jpg') no-repeat center center fixed;
+    background-size: cover;
+    font-family: 'Georgia', serif; /* Change font-family */
+}
+
+#introduction-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
     text-align: center;
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent background */
+    padding: 20px;
+    border-radius: 10px;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: #333;
+    color: white;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+.intro-content h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #333;
+    font-family: 'Georgia', serif; /* Change font-family */
+}
+
+.intro-content p {
+    font-size: 1.2em;
+    color: #555;
+    margin-bottom: 30px;
+}
+
+.gateway-container {
+    position: relative;
+    display: inline-block;
+    margin-top: 20px;
+}
+
+.gateway-image {
+    display: block;
+    width: 100%; /* Adjust as needed */
+    height: auto;
+}
+
+.button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: inline-block;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    padding: 15px 30px;
+    font-size: 18px;
+    border-radius: 10px;
+    transition: background-color 0.3s;
+    z-index: 1; /* Ensure the button is above the image */
+}
+
+.button:hover {
+    background-color: #0056b3;
+}
+
+/* Styles for Project Detail Pages */
+.project-detail {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.9); /* Slightly less transparent */
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.project-detail img {
+    max-width: 80%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.project-detail .back-button {
+    display: inline-block;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    margin-top: 20px;
+    transition: background-color 0.3s;
+}
+
+.project-detail .back-button:hover {
+    background-color: #0056b3;
+}
+
+/* Custom styles for Projects Page */
+.custom-background {
+    background: url('https://example.com/your-custom-background.jpg') no-repeat center center fixed;
+    background-size: cover;
+    font-family: 'Georgia', serif; /* Change font-family */
+}
+
+#projects-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent background */
+    padding: 20px;
+    border-radius: 10px;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: #333;
+    color: white;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+#project-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .project {
-    background-color: rgba(255, 255, 255, 0.8);
     margin: 20px;
     padding: 20px;
+    background-color: #fff;
     border-radius: 10px;
-    display: inline-block;
-    text-align: left;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    max-width: 600px;
 }
 
 .project img {
     max-width: 100%;
     height: auto;
     border-radius: 10px;
+    margin-bottom: 10px;
 }
 
-#contact-page {
-    padding: 20px;
-    text-align: center;
+.learn-more-button {
+    display: inline-block;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    margin-top: 10px;
+    transition: background-color 0.3s;
 }
 
-nav a {
-    margin: 0 15px;
+.learn-more-button:hover {
+    background-color: #0056b3;
 }
