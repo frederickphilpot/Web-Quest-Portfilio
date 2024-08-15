@@ -1,4 +1,4 @@
-/* styles.css */
+* styles.css */
 html, body{ height: 100%; margin: 0;}
 body {
   display: flex;
@@ -275,3 +275,4 @@ nav a:hover {
 .learn-more-button:hover {
     background-color: #0056b3;
 }
+
