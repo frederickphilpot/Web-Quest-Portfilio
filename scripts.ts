@@ -48,5 +48,12 @@ document.addEventListener('DOMContentLoaded', () => {
     document.getElementById('home-link')?.addEventListener('click', () => navigateTo('landing-page'));
     document.getElementById('projects-link')?.addEventListener('click', () => navigateTo('projects-page'));
     document.getElementById('contact-link')?.addEventListener('click', () => navigateTo('contact-page'));
-    document.getElementById('gateway-button')?.addEventListener('click', () => navigateTo('projects-page'));
+    document.getElementById('gateway-button')?.addEventListener('click', () => {
+        window.location.href = 'projects.html';
+    });
+
+    // Display projects if on the projects page
+    if (window.location.pathname.endsWith('projects.html')) {
+        displayProjects();
+    }
 });
