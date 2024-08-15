@@ -1,14 +1,17 @@
+// scripts.js
 document.addEventListener('DOMContentLoaded', () => {
-    const pages = ['landing', 'introduction', 'projects', 'contact'];
+    const pages = ['landing-page', 'introduction-page', 'projects-page', 'contact-page'];
 
     function navigateTo(pageId) {
         // Hide all pages
-        document.querySelectorAll('div[id$="-page"]').forEach(page => {
-            page.classList.add('hidden');
+        pages.forEach(page => {
+            const element = document.getElementById(page);
+            if (element) element.classList.add('hidden');
         });
 
         // Show the selected page
-        document.getElementById(pageId)?.classList.remove('hidden');
+        const selectedPage = document.getElementById(pageId);
+        if (selectedPage) selectedPage.classList.remove('hidden');
 
         // Display projects if navigating to the projects page
         if (pageId === 'projects-page') {
@@ -16,17 +19,16 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
 
-    // Dummy projects for demonstration
-    const projects = [
-        { name: 'Project 1', description: 'This is a description of Project 1.', link: '#', image: 'https://via.placeholder.com/150' },
-        { name: 'Project 2', description: 'This is a description of Project 2.', link: '#', image: 'https://via.placeholder.com/150' },
-        { name: 'Project 3', description: 'This is a description of Project 3.', link: '#', image: 'https://via.placeholder.com/150' }
-    ];
-
     function displayProjects() {
         const container = document.getElementById('project-container');
         if (container) {
             container.innerHTML = '';
+            const projects = [
+                { name: 'Project 1', description: 'This is a description of Project 1.', link: '#', image: './images/aroundtheus.PNG' },
+                { name: 'Project 2', description: 'This is a description of Project 2.', link: '#', image: './images/coffeehouse.PNG' },
+                { name: 'Project 3', description: 'This is a description of Project 3.', link: '#', image: './images/penguin.PNG' }
+            ];
+
             projects.forEach(project => {
                 const projectElement = document.createElement('div');
                 projectElement.classList.add('project');

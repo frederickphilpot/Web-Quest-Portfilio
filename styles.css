@@ -1,3 +1,4 @@
+/* styles.css */
 body {
     background-image: url(https://images.playground.com/d9ca12d698b04830ad6b8cc9f36f2e4b.jpeg);
     background-size: cover;
@@ -17,15 +18,12 @@ body {
     padding: 20px;
     border-radius: 10px;
     margin: 20px;
-}
-#landing-page, #introduction-page, #projects-page, #contact-page {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     height: 100vh;
     text-align: center;
-    padding: 20px;
 }
 
 nav {
@@ -63,11 +61,6 @@ button {
 button:hover {
     background-color: #0056b3;
 }
-
-.hidden {
-    display: none;
-}
-/* styles.css */
 
 #begin-quest-button {
     background-color: #4CAF50; /* Green background */
