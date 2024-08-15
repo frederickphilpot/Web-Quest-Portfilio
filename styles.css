@@ -4,6 +4,7 @@ body {
     font-family: Arial, sans-serif;
     background: url('https://images.playground.com/d9ca12d698b04830ad6b8cc9f36f2e4b.jpeg') no-repeat center center fixed;
     background-size: cover;
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent background */
    
 }
 #landing-page {
@@ -14,8 +15,7 @@ body {
     height: 100vh;
     text-align: center;
     padding: 20px;
-    border-radius: 10px;
-    
+    border-radius: 10px;    
 }
 
 h1 {
